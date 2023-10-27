@@ -56,4 +56,13 @@ while (carryOn === true) {
   const result = rps(input1.toUpperCase(), input2.toUpperCase());
 
   console.log(`\n${result}\n`);
+
+  const bool = prompt('Do you want to play another round? (y/n)  ');
+
+  if (bool.toLowerCase() === 'n') {
+    carryOn = false;
+    console.log('\nHope you had fun! :)\n');
+  } else {
+    console.log('\n');
+  }
 }
